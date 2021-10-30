@@ -1,6 +1,6 @@
-explore: entry_core {
-  hidden: yes
-  extension: required
+include: "/views/*.view.lkml"
+explore: entry{
+
 
   join: user {
     type: left_outer
