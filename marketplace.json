@@ -13,23 +13,12 @@
     },
     "SCHEMA_NAME": {
       "label": "Schema Name"
-    },
-    "CONFIG_PROJECT_NAME": {
-      "label": "Config Project Name"
     }
   },
   "models": [
     {
       "name": "block_keboola_time_tracking_essentials_v2",
       "connection_constant": "CONNECTION"
-    }
-  ],
-  "auxiliary_projects": [
-    {
-      "git_uri": "git://github.com/llooker/block-keboola-time_tracking_essentials-config.git",
-      "git_ref": "9b6c92fc5aff83ce047a40d8267a79b2a4c86639",
-      "label": "Time Tracking Essentials by Keboola Config",
-      "constant_name": "CONFIG_PROJECT_NAME"
     }
   ]
 }
