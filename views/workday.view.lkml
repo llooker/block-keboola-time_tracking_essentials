@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/workday.view"
-
-view: workday {
-  extends: [workday_config]
-}
-
-view: workday_core {
+view: workday{
   sql_table_name: @{SCHEMA_NAME}.WORKDAY ;;
 
   dimension_group: date {

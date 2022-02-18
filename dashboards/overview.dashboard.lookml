@@ -12,7 +12,7 @@
     height: 2
   - title: Week of
     name: Week of
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: single_value
     fields: [entry.start_week]
@@ -29,7 +29,7 @@
     height: 2
   - title: Billable Hours This Month
     name: Billable Hours This Month
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: single_value
     fields: [entry.billable_hours]
@@ -42,7 +42,7 @@
     height: 2
   - title: Non-Billable Hours This Month
     name: Non-Billable Hours This Month
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: single_value
     fields: [entry.non_billable_hours]
@@ -56,7 +56,7 @@
     height: 2
   - title: Billable Hours vs. Previous Month
     name: Billable Hours vs Previous Month
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_line
     fields: [entry.start_day_of_month, entry.billable_hours, entry.start_month]
@@ -115,7 +115,7 @@
     height: 5
   - title: Top Projects by Billable Hours
     name: Top Projects by Billable Hours
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_column
     fields: [project.project, entry.billable_hours]
@@ -166,7 +166,7 @@
     height: 6
   - title: Top Time Eaters (Billable Projects)
     name: Top Time Eaters (Billable Projects)
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_column
     fields: [project.project, entry.non_billable_hours]
@@ -220,7 +220,7 @@
     height: 6
   - title: Billable vs. Non-Billable Project Work (Previous 9 Weeks)
     name: Billable vs Non-Billable Project Work (Previous 9 Weeks)
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_area
     fields: [entry.billable_hours, entry.non_billable_hours, entry.start_week]
@@ -279,7 +279,7 @@
     height: 7
   - title: Weekly Utilization Trend (Previous 9 Weeks)
     name: Weekly Utilization Trend (Previous 9 Weeks)
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_column
     fields: [entry.billable_hours, entry.non_billable_hours, entry.start_week, user.count]
@@ -352,7 +352,7 @@
     height: 7
   - title: Week Tracking
     name: Week Tracking
-    model: block_keboola_time_tracking_essentials
+    model: block_keboola_time_tracking_essentials_v2
     explore: entry
     type: looker_bar
     fields: [entry.billable_hours, entry.non_billable_hours, entry.hours, user.user]

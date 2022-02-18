@@ -19,3 +19,7 @@ The underlying model contains two explores:
  - Workdays - simple one table explore used in merged queries to be able to work more easily with calculating number of working days in time periods etc.
 
 As a standard, the data gets provided as a connection to Keboola-provided Snowflake, but it can be easily changed to your own DWH of choice during the setup.
+
+## Customization
+The LookML contents of this block can also be modified/extended to best fit all use cases.
+This block utilizes Refinement files for customization. For more information on using refinements to customize marketplace blocks, please see [this documentation](https://docs.looker.com/data-modeling/marketplace/customize-blocks).
